@@ -37,15 +37,22 @@ The plugin provides props for extra customization. Every time you change the pro
 ```json
 {
   "expo": {
-    "plugins": [
-      [
-        "@config-plugins/react-native-branch",
-        {
+    "ios": {
+      "config": {
+        "branch": {
           "apiKey": "key_live_f9f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8",
           "iosAppDomain": "awesome-alternate.app.link"
         }
-      ]
-    ]
+      }
+    },
+    "android": {
+      "config": {
+        "branch": {
+          "apiKey": "key_live_f9f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8",
+          "iosAppDomain": "awesome-alternate.app.link"
+        }
+      }
+    }
   }
 }
 ```
